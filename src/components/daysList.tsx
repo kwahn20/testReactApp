@@ -2,11 +2,6 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import moment from 'moment';
 
-const zipCodes = [
-    { zCode: 55416 }, { zCode: 90210 },
-    { zCode: 10001 }, { zCode: 75001 },
-]
-
 const DaysList = (props: any) => {
     const [weatherData, setWeatherData] = useState({ list: [] });
     const fetchWeatherData = async () => {
